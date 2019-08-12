@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DefaultTitleView">
+        <attr name="leftIcon" format="reference"/>
+        <attr name="leftText" format="reference|string"/>
+        <attr name="leftTextColor" format="reference|color"/>
+        <attr name="leftTextSize" format="reference|dimension"/>
+        <attr name="leftViewPadding" format="string"/>
+        <attr name="leftMode" format="enum">
+            <enum name="text" value="1"/>
+            <enum name="icon" value="2"/>
+        </attr>
+
+        <attr name="titleText" format="reference|string"/>
+        <attr name="title_TextColor" format="reference|color"/>
+        <attr name="titleTextSize" format="dimension|reference"/>
+        <attr name="titleViewPadding" format="string"/>
+
+        <attr name="rightIcon" format="reference"/>
+        <attr name="rightTextColor" format="reference|color"/>
+        <attr name="rightTextSize" format="reference|dimension"/>
+        <attr name="rightViewPadding" format="string"/>
+        <attr name="rightText" format="reference|string"/>
+        <attr name="rightMode" format="enum">
+            <enum name="text" value="1"/>
+            <enum name="icon" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

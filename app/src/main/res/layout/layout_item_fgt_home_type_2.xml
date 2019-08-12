@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_FFFFFF"
+                android:padding="10dp">
+
+    <TextView
+            android:id="@+id/layout_item_fgt_home_type_2_author_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="bottom"
+            android:textColor="@android:color/secondary_text_light"
+            tools:text="作者"/>
+
+    <TextView
+            android:id="@+id/layout_item_fgt_home_type_2_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/dp_10"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="@dimen/sp_16"
+            tools:ignore="RtlSymmetry"
+            tools:text="类型"/>
+
+    <TextView
+            android:id="@+id/layout_item_fgt_home_type_2_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/layout_item_fgt_home_type_2_author_tv"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_4"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/sp_19"
+            tools:text="标题"/>
+
+    <TextView
+            android:id="@+id/layout_item_fgt_home_type_2_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/layout_item_fgt_home_type_2_title_tv"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/dp_10"
+            android:textColor="@android:color/darker_gray"
+            tools:ignore="RtlSymmetry"
+            tools:text="日期"/>
+
+</RelativeLayout>

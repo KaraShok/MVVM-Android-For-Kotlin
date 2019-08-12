@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">玩安卓-Kotlin</string>
+
+    <string name="aty_main_item_str_home">首页</string>
+    <string name="aty_main_item_str_article">文章</string>
+    <string name="aty_main_item_str_project">项目</string>
+    <string name="aty_main_item_str_my">我的</string>
+</resources>

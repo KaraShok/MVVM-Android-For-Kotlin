@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.karashok.common.widget.DefaultTitleView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_common_base_default_title_dtv"
+        android:orientation="vertical"
+        android:background="@color/color_FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>

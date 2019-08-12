@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".main.ui.aty.MainActivity">
+
+    <com.karashok.common.widget.HackyViewPager
+            android:id="@+id/aty_main_hvp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:layout_above="@+id/aty_main_bottom_ll"/>
+
+    <LinearLayout
+            android:id="@+id/aty_main_bottom_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+                android:id="@+id/aty_main_home_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground">
+
+            <TextView
+                    android:id="@+id/aty_main_home_tv"
+                    style="@style/atyMainBottomTabStyle"
+                    android:drawableTop="@drawable/selector_tab_home"
+                    android:text="@string/aty_main_item_str_home" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/aty_main_article_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground">
+
+            <TextView
+                    android:id="@+id/aty_main_article_tv"
+                    style="@style/atyMainBottomTabStyle"
+                    android:drawableTop="@drawable/selector_tab_article"
+                    android:text="@string/aty_main_item_str_article" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/aty_main_category_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:background="?attr/selectableItemBackground">
+
+            <TextView
+                    android:id="@+id/aty_main_category_tv"
+                    style="@style/atyMainBottomTabStyle"
+                    android:drawableTop="@drawable/selector_tab_category"
+                    android:text="@string/aty_main_item_str_project" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/aty_main_my_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground">
+
+            <TextView
+                    android:id="@+id/aty_main_my_tv"
+                    style="@style/atyMainBottomTabStyle"
+                    android:drawableTop="@drawable/selector_tab_my"
+                    android:text="@string/aty_main_item_str_my" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/aty_main_bottom_ll"
+            android:background="#e0e0e0" />
+
+</RelativeLayout>

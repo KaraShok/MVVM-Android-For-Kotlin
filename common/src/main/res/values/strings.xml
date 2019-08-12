@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Common</string>
+    <string name="layout_common_base_loading_dialog_fgt_tv">加载中</string>
+</resources>

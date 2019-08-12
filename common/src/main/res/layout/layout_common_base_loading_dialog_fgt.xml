@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_common_base_loading_dialog_fgt_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp">
+
+        <ProgressBar
+                android:id="@+id/layout_common_base_loading_dialog_fgt_pr"
+                style="android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:indeterminateBehavior="cycle"
+                android:indeterminateTint="@color/color_FEFEFE"
+                android:indeterminateTintMode="src_atop"/>
+
+        <TextView
+                android:id="@+id/layout_common_base_loading_dialog_fgt_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/layout_common_base_loading_dialog_fgt_tv"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/color_FFFFFF"
+                android:padding="@dimen/dp_10"
+                android:text="大家都在搜"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/layout_fgt_hot_search_hot_search_tfl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:paddingStart="@dimen/dp_10"
+                app:max_select="-1" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/color_FFFFFF"
+                android:padding="@dimen/dp_10"
+                android:text="常用网站"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/layout_fgt_hot_search_friend_list_tfl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:paddingStart="@dimen/dp_10"
+                app:max_select="-1" />
+    </LinearLayout>
+</ScrollView>

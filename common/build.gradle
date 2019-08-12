@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion compileSdkVersionInt
+
+    defaultConfig {
+        minSdkVersion minSdkVersionInt
+        targetSdkVersion targetSdkVersionInt
+        versionCode versionCodeInt
+        versionName versionNameStr
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api "com.squareup.retrofit2:retrofit:$retrofit2Version"
+    api "com.squareup.retrofit2:converter-gson:$retrofitConverterGsonVersion"
+    api "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$retrofit2KotlinCoroutinesAdapterVersion"
+    api "com.squareup.okhttp3:okhttp:$okhttp3Version"
+    api "com.squareup.okhttp3:logging-interceptor:$okhttp3LoggingInterceptor"
+    api "com.google.code.gson:gson:$gsonVersion"
+    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:$BaseRecyclerViewAdapterHelperVersion"
+
+    api "androidx.recyclerview:recyclerview:$recyclerview"
+    api "androidx.cardview:cardview:$cardview"
+    api "androidx.fragment:fragment:$fragment"
+    api "androidx.appcompat:appcompat:$appcompatVersion"
+    api "org.jetbrains.anko:anko:$anko_version"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "androidx.lifecycle:lifecycle-extensions:$lifecycleExtensions"
+
+    api project(path: ':lib_base')
+    api project(path: ':lib_image_loader')
+    api project(path: ':lib_widget')
+}

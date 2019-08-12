@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="styleLibBaseDialogFgt" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 底部fragment-->
+    <style name="styleLibBaseBottomDialogFg" parent="styleLibBaseDialogFgt">
+        <item name="android:layout_width">match_parent</item>
+        <!-- 宽度全屏 ↓ -->
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <!-- 宽度全屏 ↑ -->
+        <item name="android:windowAnimationStyle">@style/styleLibBaseBottomDialogFg.AnimationStyle</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="styleLibBaseBottomDialogFg.AnimationStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+</resources>

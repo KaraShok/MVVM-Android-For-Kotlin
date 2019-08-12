@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+            android:id="@+id/layout_lib_base_base_title_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1">
+
+        <FrameLayout
+                android:id="@+id/layout_lib_base_base_content_fl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <com.karashok.lib_base.widget.states_view.StateLayout
+                android:id="@+id/layout_lib_base_base_state_sl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>
