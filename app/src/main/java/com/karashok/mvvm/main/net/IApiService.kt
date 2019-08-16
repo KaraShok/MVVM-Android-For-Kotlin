@@ -1,4 +1,4 @@
-package com.karashok.common.net
+package com.karashok.mvvm.main.net
 
 import com.karashok.common.data.*
 import retrofit2.Call

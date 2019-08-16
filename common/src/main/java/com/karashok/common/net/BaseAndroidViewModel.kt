@@ -9,12 +9,13 @@ import androidx.lifecycle.AndroidViewModel
  * @name BaseAndroidViewModel
  * @date 2019/08/03 15:48
  **/
-open class BaseAndroidViewModel(app: Application) : AndroidViewModel(app) {
+open abstract class BaseAndroidViewModel<T>(app: Application) : AndroidViewModel(app) {
 
-    protected val mApiService: ApiService = ApiService()
+    protected val mApiService = getApiService()
 
     override fun onCleared() {
         super.onCleared()
-
     }
+
+    protected abstract fun getApiService(): T
 }

@@ -13,5 +13,5 @@ interface DataJudgeModel<T> {
      * @param data
      * @return
      */
-    abstract fun nullData(data: T): Boolean
+    fun nullData(data: T): Boolean
 }
