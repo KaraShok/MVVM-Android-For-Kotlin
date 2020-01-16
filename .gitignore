@@ -20,6 +20,7 @@ out/
 # Gradle files
 .DS_Store
 gradlew
+修改gitignore文件配置
 .gradle/
 build/
 gradle/
